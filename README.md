@@ -1,4 +1,4 @@
-## Hi there 👋
+[![GitHub Streak](https://streak-stats.demolab.com?user=Renegade2k6&theme=ayu-mirage)](https://git.io/streak-stats)
 
 <!--
 **renegade2k6/renegade2k6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
