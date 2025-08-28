@@ -14,6 +14,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      USERNAME: renegade2k6
+      THEME: tokyonight
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,16 +24,84 @@ jobs:
       - name: Ensure assets folder
         run: mkdir -p assets
 
-      - name: Fetch cards
+      - name: Fetch cards with retries + fallbacks
+        shell: bash
         run: |
-          curl -fsSL "https://github-readme-stats.vercel.app/api?username=renegade2k6&show_icons=true&theme=tokyonight&hide_border=true" -o assets/github-stats.svg
-          curl -fsSL "https://github-readme-stats.vercel.app/api/top-langs/?username=renegade2k6&layout=compact&theme=tokyonight&hide_border=true" -o assets/top-langs.svg
-          curl -fsSL "https://github-profile-trophy.vercel.app/?username=renegade2k6&theme=onedark&no-frame=true&margin-w=10&margin-h=10" -o assets/trophies.svg
-          curl -fsSL "https://github-readme-streak-stats.herokuapp.com?user=renegade2k6&theme=tokyonight&hide_border=true" -o assets/streak.svg
+          set -euo pipefail
 
-      - name: Commit updated cards
+          placeholder_svg () {
+            local out="$1" ; local title="$2"
+            cat > "$out" << 'SVG'
+            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="120">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#7c3aed"/>
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="#0b0f19"/>
+              <rect x="8" y="8" width="784" height="104" rx="10" fill="url(#g)" opacity="0.15"/>
+              <text x="24" y="56" font-size="22" fill="#e5e7eb" font-family="Segoe UI, Inter, system-ui">Card unavailable (provider down/rate-limited)</text>
+              <text x="24" y="88" font-size="18" fill="#a5b4fc" font-family="Segoe UI, Inter, system-ui">Showing cached/placeholder for now.</text>
+            </svg>
+SVG
+            # Stamp the title into the placeholder
+            sed -i "s/Card unavailable/${title} unavailable/" "$out"
+          }
+
+          fetch_with_retry () {
+            local url="$1" ; local out="$2" ; local label="$3"
+            local tries=3 http=0 ok=0
+            for i in $(seq 1 $tries); do
+              echo "::group::Fetch $label (attempt $i/$tries)"
+              http=$(curl -L -sS -w "%{http_code}" -o "${out}.tmp" "$url" || echo "000")
+              echo "HTTP $http from $url"
+              echo "::endgroup::"
+              if [[ "$http" -ge 200 && "$http" -lt 400 ]]; then
+                mv "${out}.tmp" "$out"
+                ok=1
+                break
+              else
+                sleep $((2*i))
+              fi
+            done
+            if [[ $ok -eq 0 ]]; then
+              echo "WARN: $label failed after $tries attempts."
+            fi
+            return $ok
+          }
+
+          # Stats
+          fetch_with_retry \
+            "https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=${THEME}&hide_border=true" \
+            "assets/github-stats.svg" "GitHub Stats" \
+          || placeholder_svg "assets/github-stats.svg" "GitHub Stats"
+
+          # Top Languages
+          fetch_with_retry \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=${THEME}&hide_border=true" \
+            "assets/top-langs.svg" "Top Languages" \
+          || placeholder_svg "assets/top-langs.svg" "Top Languages"
+
+          # Trophies (only one provider, just retry then placeholder)
+          fetch_with_retry \
+            "https://github-profile-trophy.vercel.app/?username=${USERNAME}&theme=onedark&no-frame=true&margin-w=10&margin-h=10" \
+            "assets/trophies.svg" "Trophies" \
+          || placeholder_svg "assets/trophies.svg" "Trophies"
+
+          # Streak (try herokuapp, then demolab)
+          if ! fetch_with_retry \
+               "https://github-readme-streak-stats.herokuapp.com?user=${USERNAME}&theme=${THEME}&hide_border=true" \
+               "assets/streak.svg" "Streak"; then
+             fetch_with_retry \
+               "https://streak-stats.demolab.com?user=${USERNAME}&theme=${THEME}&hide_border=true" \
+               "assets/streak.svg" "Streak" \
+             || placeholder_svg "assets/streak.svg" "Streak"
+          fi
+
+      - name: Commit updated cards (only if changed)
         uses: EndBug/add-and-commit@v9
         with:
           add: "assets/*.svg"
-          message: "chore: update README cards"
+          message: "chore: update README cards (auto)"
           default_author: github_actions
+          push: true
