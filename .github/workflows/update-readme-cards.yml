@@ -82,7 +82,7 @@ SVG
             "assets/top-langs.svg" "Top Languages" \
           || placeholder_svg "assets/top-langs.svg" "Top Languages"
 
-          # Trophies (only one provider, just retry then placeholder)
+          # Trophies (single provider → retry then placeholder)
           fetch_with_retry \
             "https://github-profile-trophy.vercel.app/?username=${USERNAME}&theme=onedark&no-frame=true&margin-w=10&margin-h=10" \
             "assets/trophies.svg" "Trophies" \
