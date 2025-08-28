@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Bash(curl:*)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6\\assets/**)",
+      "Read(F:\\Github\\renegade2k6/**)",
+      "Read(F:\\Github\\renegade2k6\\assets/**)",
+      "Read(F:\\Github\\renegade2k6\\assets/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
