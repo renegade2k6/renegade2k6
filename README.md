@@ -110,17 +110,19 @@ Right now my focus is on two live projects:
 <!-- ========= CONNECT ========= -->
 <h2 id="-connect">🔗 Connect With Me</h2>
 
-<div align="center" style="display: flex; gap: 8px;">
+<p align="center">
   <a href="https://www.patreon.com/renegade2k6UK" target="_blank">
     <img alt="Patreon" src="https://img.shields.io/badge/Patreon-FF424D?style=for-the-badge&logo=patreon&logoColor=white" />
   </a>
+  <span style="margin-left: 8px;"></span>
   <a href="https://x.com/Renegade2k6News" target="_blank">
     <img alt="X" src="https://img.shields.io/badge/Follow-%40Renegade2k6News-000000?style=for-the-badge&logo=x&logoColor=white" />
   </a>
+  <span style="margin-left: 8px;"></span>
   <a href="https://www.facebook.com/ren2k6" target="_blank">
     <img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
   </a>
-</div>
+</p>
 
 <hr/>
 <p align="center"><i>“Say no to bloat. Ship the tool. Polish the edge.”</i> ⚡</p>
