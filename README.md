@@ -46,7 +46,6 @@
 <!-- ========= NAV ========= -->
 <p align="center">
   <a href="#-about">About</a> •
-  <a href="#-skills">Skills</a> •
   <a href="#-featured-projects">Featured Projects</a> •
   <a href="#-stats">Stats</a> •
   <a href="#-connect">Connect</a>
