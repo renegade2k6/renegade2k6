@@ -4,12 +4,6 @@
   Vibe: Futuristic, polished, no-nonsense.
 -->
 
-<div align="center">
-  <img src="https://gpvc.arturio.dev/renegade2k6" alt="Header" />
-</div>
-
-<hr/>
-
 <!-- ========= HERO ========= -->
 <div align="center">
 
@@ -158,6 +152,10 @@ Right now my focus is on two live projects:
 
 <!-- ========= STATS ========= -->
 <h2 id="-stats">📊 Stats</h2>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=renegade2k6&show_icons=true&theme=dracula" alt="GitHub Stats" />
+</div>
 
 <div align="center">
   <!-- Self-hosted cards (updated nightly by GitHub Action) -->
