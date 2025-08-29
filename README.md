@@ -4,25 +4,8 @@
   Vibe: Futuristic, polished, no-nonsense.
 -->
 
-<style>
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.header-image {
-  animation: pulse 10s infinite;
-}
-</style>
-
 <div align="center">
-  <img src="https://i.imgur.com/n2nixW5.png" alt="Header" class="header-image" />
+  <img src="https://i.imgur.com/n2nixW5.png" alt="Header" />
 </div>
 
 <hr/>
