@@ -52,6 +52,7 @@
 <!-- ========= NAV ========= -->
 <p align="center">
   <a href="#-about">About</a> •
+  <a href="#-skills">Skills</a> •
   <a href="#-featured-projects">Featured Projects</a> •
   <a href="#-stats">Stats</a> •
   <a href="#-connect">Connect</a>
@@ -78,6 +79,56 @@ Right now my focus is on two live projects:
   <li>🎮 <strong><a href="https://renegade2k6.github.io/LFULeaks/">LFU Leaks</a></strong> — a static viewer for game update leaks.</li>
   <li>🤖 <strong><a href="https://renegade2k6.github.io/ai-coding-hub/">AI Coding Hub</a></strong> — a curated hub for AI tools, CLIs, and runtimes.</li>
 </ul>
+
+<!-- ========= SKILLS ========= -->
+<h2 id="-skills">🛠️ Skills</h2>
+
+<table align="center">
+  <tr>
+    <td align="center" width="96">
+      <a href="#-skills">
+        <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
+      </a>
+      <br>HTML5
+    </td>
+    <td align="center" width="96">
+      <a href="#_blank">
+        <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS3" />
+      </a>
+      <br>CSS3
+    </td>
+    <td align="center" width="96">
+      <a href="#_blank">
+        <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+      </a>
+      <br>JavaScript
+    </td>
+    <td align="center" width="96">
+      <a href="#_blank">
+        <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
+      </a>
+      <br>React
+    </td>
+    <td align="center" width="96">
+      <a href="#_blank">
+        <img src="https://skillicons.dev/icons?i=vite" width="48" height="48" alt="Vite" />
+      </a>
+      <br>Vite
+    </td>
+    <td align="center" width="96">
+      <a href="#_blank">
+        <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind CSS" />
+      </a>
+      <br>Tailwind CSS
+    </td>
+    <td align="center" width="96">
+      <a href="#_blank">
+        <img src="https://skillicons.dev/icons?i=github" width="48" height="48" alt="GitHub" />
+      </a>
+      <br>GitHub
+    </td>
+  </tr>
+</table>
 
 <!-- ========= FEATURED PROJECTS ========= -->
 <h2 id="-featured-projects">🚀 Featured Projects</h2>
