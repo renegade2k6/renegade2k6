@@ -5,7 +5,7 @@
 -->
 
 <div align="center">
-  <img src="https://i.imgur.com/n2nixW5.png" alt="Header" />
+  <img src="https://i.ibb.co/f2D44zJ/header.png" alt="Header" />
 </div>
 
 <hr/>
