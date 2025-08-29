@@ -104,13 +104,7 @@ Right now my focus is on two live projects:
 
 <div align="center">
   <!-- Self-hosted cards (updated nightly by GitHub Action) -->
-  <img alt="GitHub stats" src="./assets/github-stats.svg" />
-  <br/>
-  <img alt="Top languages" src="./assets/top-langs.svg" />
-  <br/>
   <img alt="GitHub Profile Trophies" src="./assets/trophies.svg" />
-  <br/>
-  <img alt="GitHub Streak" src="./assets/streak.svg" />
 </div>
 
 <!-- ========= CONNECT ========= -->
