@@ -39,7 +39,7 @@
   <!-- Typing SVG (updated & unclipped) -->
   <img
     alt="typing"
-    src="https://readme-typing-svg.herokuapp.com?duration=2600&pause=700&multiline=true&width=820&height=90&size=24&lines=LFU+Leaks%3A+game+updates%2C+fast.;AI+Coding+Hub%3A+tools%2C+CLIs%2C+runtimes.;Fair%2C+clean%2C+useful.+Or+it+doesn%E2%80%99t+ship."
+    src="https://readme-typing-svg.herokuapp.com?duration=2600&pause=700&multiline=true&width=820&height=90&size=24&lines=LFU+Leaks%3A+game+updates%2C+fast.;LFU+Explorer%3A+data+viewer%2C+search%2C+explore.;Fair%2C+clean%2C+useful.+Or+it+doesn%E2%80%99t+ship."
   />
 </div>
 
@@ -70,7 +70,7 @@ What I’m about:
 Right now my focus is on two live projects:
 <ul>
   <li>🎮 <strong><a href="https://renegade2k6.github.io/LFULeaks/">LFU Leaks</a></strong> — a static viewer for game update leaks.</li>
-  <li>🤖 <strong><a href="https://renegade2k6.github.io/ai-coding-hub/">AI Coding Hub</a></strong> — a curated hub for AI tools, CLIs, and runtimes.</li>
+  <li>🔍 <strong><a href="https://renegade2k6.github.io/LFU-Explorer/">LFU Explorer</a></strong> — advanced data viewer and search tool for game exploration.</li>
 </ul>
 
 <!-- ========= FEATURED PROJECTS ========= -->
@@ -89,9 +89,9 @@ Right now my focus is on two live projects:
   </tr>
   <tr>
     <td>
-      <h3>🤖 <a href="https://renegade2k6.github.io/ai-coding-hub/">AI Coding Hub</a></h3>
-      Curated collection of AI tools, CLI utilities, and providers with OG previews.<br/>
-      Futuristic theme, clean UI cards, ready-to-share assets.<br/><br/>
+      <h3>🔍 <a href="https://renegade2k6.github.io/LFU-Explorer/">LFU Explorer</a></h3>
+      Advanced data viewer and search tool for game exploration.<br/>
+      Fast, intuitive interface for browsing and analyzing game data.<br/><br/>
       <img alt="react" src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white&style=flat-square" />
       <img alt="vite" src="https://img.shields.io/badge/Vite-4-646CFF?logo=vite&logoColor=white&style=flat-square" />
       <img alt="tailwind" src="https://img.shields.io/badge/Tailwind-v4-06B6D4?logo=tailwindcss&logoColor=white&style=flat-square" />
