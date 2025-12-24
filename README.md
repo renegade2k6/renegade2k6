@@ -91,20 +91,6 @@ Powerful search and exploration tool for diving deep into game data. Interactive
 
 ---
 
-## 🏆 GitHub Activity
-
-<div align="center">
-
-<img src="./assets/trophies.svg" alt="GitHub Trophies" />
-
-<br/><br/>
-
-**📊 Check out my repositories below to see what I'm building!**
-
-</div>
-
----
-
 ## 🔗 Connect
 
 <div align="center">
