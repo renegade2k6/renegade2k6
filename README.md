@@ -91,18 +91,15 @@ Powerful search and exploration tool for diving deep into game data. Interactive
 
 ---
 
-## 📊 GitHub Stats
+## 🏆 GitHub Activity
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=renegade2k6&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
+<img src="./assets/trophies.svg" alt="GitHub Trophies" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=renegade2k6&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+<br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=renegade2k6&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-
-<!-- Trophy Stats -->
-<img src="./assets/trophies.svg" width="80%" alt="GitHub Trophies" />
+**📊 Check out my repositories below to see what I'm building!**
 
 </div>
 
