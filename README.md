@@ -34,21 +34,13 @@
 
 My specialty? **Last Fortress Underground** — extracting updates, analyzing changes, and building tools to explore game data before official releases.
 
-```javascript
-const renegade = {
-  focus: ["Game Data Mining", "Web Tools", "Static Sites"],
-  mission: "Ship it sharp. Fix it fast. Keep it honest.",
-  current: ["LFU Leaks", "LFU Explorer"],
-  philosophy: "No bloat. Just results."
-};
-```
-
 ### 🎯 What I Do
 
 - 🎮 **Game Data Analysis** — Deep dive into Last Fortress Underground updates
 - 🔍 **Leak Hunting** — Surface game changes before official announcements
 - ⚡ **Tool Building** — Fast, clean web apps for data exploration
 - 📊 **Diff Analysis** — Track every change, every update
+- 💎 **Mission:** *Ship it sharp. Fix it fast. Keep it honest.*
 
 ---
 
@@ -103,10 +95,11 @@ Powerful search and exploration tool for diving deep into game data. Interactive
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=renegade2k6&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=7C3AED&text_color=FFFFFF" />
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=renegade2k6&theme=radical&hide_border=true&background=0D1117&ring=00E5FF&fire=FF2D55&currStreakLabel=00E5FF" />
+<img src="https://github-readme-stats.vercel.app/api?username=renegade2k6&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
 
-<img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=renegade2k6&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=FFFFFF" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=renegade2k6&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=renegade2k6&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 
 <!-- Trophy Stats -->
 <img src="./assets/trophies.svg" width="80%" alt="GitHub Trophies" />
